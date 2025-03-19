@@ -9,14 +9,14 @@ export const routes: Routes = [{
             )
         },
     },
-    // {
-    //     // path: '',
-    //     // pathMatch: 'full',
-    //     // loadComponent: () => {
-    //     //     return import('./components/quiz-card/quiz-card.component').then(
-    //     //         module => module.QuizCardComponent
-    //     //     )
-    //     // }, 
-    // }
+    {
+        path: 'json_server_test/:id',
+        pathMatch: 'full',
+        loadComponent: () => {
+            return import('./pages/json-server-test/json-server-test.component').then(
+                module => module.JsonServerTestComponent
+            )
+        }, 
+    }
 
 ];
